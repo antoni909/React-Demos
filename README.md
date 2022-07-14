@@ -11,3 +11,7 @@ In the project directory, you can run:
 `npm test` Launches the test runner in the interactive watch mode
 
 `npm run build` Builds the app for production to the `build` folder
+
+## Resources Used
+
+[Star Wars API](https://swapi.dev/documentation#base)
