@@ -19,7 +19,7 @@ const Cache = () => {
         setQuery( updateQuery => updateQuery = selectedValue )
     }
 
-    useEffect(()=>{
+    useEffect( ()=>{
         const fetchData = async () =>{
             setStatus( stats => stats = 'fetching ... ' )
             if(!query) console.log('query is not falsy === ',!query)
@@ -60,10 +60,8 @@ const Cache = () => {
             </form>
             <h3> Status: { status } </h3>
             <h3> Cache: { Object.keys(cache).map( el =>( 
-                     <div key={ el }>
-                                <h5>{ el }</h5>
-                            </div>
-                        ))}
+                    <div key={ el }><h5>{ el }</h5></div>
+                ))}
             </h3>
             <h3>Results</h3>
             {
