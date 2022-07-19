@@ -1,4 +1,4 @@
-import Cache from '../demos/Cache';
+import Cache from '../demos/cache/Cache';
 import Header from '../header/Header';
 import './App.css';
 
