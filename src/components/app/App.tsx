@@ -1,4 +1,5 @@
-import Cache from '../demos/cache/Cache';
+// import Cache from '../demos/cache/Cache';
+import Counter from '../demos/counter/Counter';
 import Header from '../header/Header';
 import './App.css';
 
@@ -7,7 +8,9 @@ function App() {
     <div className="App">
       <Header />
 
-      <Cache />
+      {/* <Cache /> */}
+      <Counter />
+
     </div>
   );
 }
