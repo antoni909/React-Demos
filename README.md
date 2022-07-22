@@ -11,6 +11,7 @@ React Demos implemented using TS and React Functional Components
   - [Index](#index)
     - [Why Though?](#why-though)
     - [Deployments](#deployments)
+    - [TypeScript with React Best Practices](#typescript-with-react-best-practices)
     - [Active Demos](#active-demos)
   - [Roadmap (tentative)](#roadmap-tentative)
     - [Available Scripts](#available-scripts)
@@ -34,16 +35,28 @@ Active Deployments
 
 - [ ] via AWS Services
 
+### TypeScript with React Best Practices 
+
+Each Component is implemented using the following guidelines:
+
+- [ ] Provide Explicit Types for all Values
+- [ ] State as a function: next state is based off of the previous State
+- [ ] Manage the multiple possible states of variables with an Object (constant)
+- [ ] Component Render logis is as function-free as possible (make references vs inline definitions)
+- [ ] Clean conditionals 
+- [ ] Use JSX shorthands (i.e. someProp vs someProp={true})
+- [ ] Opt for string props vs string props with curly brackets
+
 ### Active Demos
 
 Simple Demos
-- [ ] Counter
+- [x] Counter
 - [ ] Stop Watch
 - [ ] Calculator
 - [ ] Analog Clock
+- [ ] Digital Clock
 - [ ] Image Scraper
 - [ ] Login Form
-- [ ] Digital Clock
 - [ ] Query a Table
 - [ ] Searchable Photo Gallery
 
@@ -81,6 +94,9 @@ APIs
 
 - [Star Wars API](https://swapi.dev/documentation#base)
 
+Best Practices: React with TypeSript
+- [ sitepoint ](https://www.sitepoint.com/react-with-typescript-best-practices/)
+- [ DEV ](https://dev.to/ruppysuppy/7-tips-for-clean-react-typescript-code-you-must-know-2da2)
 ### Show your support
 
 Give a ⭐️ if this project helped you!
