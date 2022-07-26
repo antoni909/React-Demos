@@ -1,4 +1,7 @@
 import { useState, ChangeEvent } from 'react'
+import './CounterChild.css'
+import Button from '@mui/material/Button'
+import TextField from '@mui/material/TextField';
 
 // Q: why need key prop to update child state...
 
@@ -34,29 +37,50 @@ const CounterChild = ({
     }
 
     return ( 
-        <div>
-            <h1>CounterChild Component</h1> 
+        <div className='counterchild-container'>
             <p>Count: { count }</p>
+                <div className="counterchild-btn-item">
+                    <TextField 
+                        id="standard-basic" 
+                        label="Standard" 
+                        variant="standard"
+                        onChange={ incHandler } 
+                        /> 
+                    <Button 
+                        variant='outlined' 
+                        onClick={ ()=> setCount( prev => prev + increase ) }
+                    >add { increase }</Button>
+                </div>
 
-            <input 
-                id="btn-change-increment" type="text"
-                onChange={ incHandler }
-            />
-            <button onClick={ ()=> setCount( prev => prev + increase ) }
-            >add { increase }</button>
+            <div className="counterchild-btn-item">
+                <TextField 
+                    id="standard-basic" 
+                    label="Standard" 
+                    variant="standard"
+                    onChange={ decHandler } 
+                /> 
+                <Button 
+                    variant='outlined' 
+                    onClick={ ()=> setCount( prev => prev - decrease ) }
+                >sub { decrease }</Button>
+            </div>
 
-            <input 
-                id="btn-change-decrement" type="text" 
-                onChange={ decHandler }
-            />
-            <button onClick={ ()=> setCount( prev => prev - decrease ) }
-            >sub { decrease }</button>
+            <div className="counterchild-btn-item">
+                <Button variant='outlined' onClick={ ()=> setCount( prev => prev * double ) }
+                > x { double }</Button>
+            </div>
 
-            <button  onClick={ ()=> setCount( prev => prev * double ) }
-            >dbl { double }</button>
-            <div> { isNotNumber && <p> Must Enter A Number Value </p> } </div>
+            <div className="counterchild-btn-item">
+                { isNotNumber && <p> Must Enter A Number Value </p> } 
+            </div>
+            <div className="counterchild-btn-item">
+                <Button 
+                    className="counterchild-btn-item-reset"
+                    variant='outlined' 
+                    onClick={ () => setCount( (prev) => prev = initialCount ) } 
+                >reset count </Button>
+            </div>
 
-            <button onClick={ () => setCount( (prev) => prev = initialCount ) } > reset count </button>
         </div>
     )
 }
