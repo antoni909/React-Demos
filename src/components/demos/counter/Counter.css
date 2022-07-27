@@ -2,8 +2,8 @@
 .counter-wrapper{
     border: 2px black solid;
     border-radius: 5%;
-    max-width: fit-content;
     color: blue;
+    max-width: fit-content;
 }
 
 .counter-container{

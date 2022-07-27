@@ -1,4 +1,28 @@
 
 .cache-wrapper{
-    background-color: rgb(244, 167, 167);
+    border-radius: 5%;
+    border: 2px rgb(0, 0, 0) solid;
+    color: blue;;
+}
+.cache-container{
+    display: flex;
+    gap: 15px;
+    direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 6px;
+}
+
+.cache-item{
+    /* border: 2px rgb(0, 0, 0) solid; */
+    border-radius: 4%;
+    padding: 6px;
+    overflow: auto;
+}
+
+.cache-results-container{
+    height: 275px;
+    overflow: auto;
+    padding: 6px;
 }
