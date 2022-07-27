@@ -7,17 +7,16 @@ React Demos implemented using TS and React Functional Components
 ## Index
 
 :book:
-- [Demos Using TypeScript and react](#demos-using-typescript-and-react)
-  - [Index](#index)
-    - [Why Though?](#why-though)
-    - [Deployments](#deployments)
-    - [TypeScript with React Best Practices](#typescript-with-react-best-practices)
-    - [Active Demos](#active-demos)
+  - [Why Though?](#why-though)
+  - [Deployments](#deployments)
+  - [TypeScript with React Best Practices](#typescript-with-react-best-practices)
+  - [Active Demos](#active-demos)
   - [Roadmap (tentative)](#roadmap-tentative)
-    - [Available Scripts](#available-scripts)
-    - [Resources Used](#resources-used)
-    - [Show your support](#show-your-support)
-    - [License](#license)
+  - [Available Scripts](#available-scripts)
+  - [Resources Used](#resources-used)
+  - [Road Blocks](#road-blocks)
+  - [Show your support](#show-your-support)
+  - [License](#license)
 
 ### Why Though?
 
@@ -63,6 +62,7 @@ Simple Demos
 Optimization Techniques
 - [x] Cache Component
   - [x] with useState Hook
+  - [ ] with useRef Hook
 - [ ] Memoization
 - [ ] Debounce 
 - [ ] Throttle
@@ -97,6 +97,18 @@ APIs
 Best Practices: React with TypeSript
 - [ sitepoint ](https://www.sitepoint.com/react-with-typescript-best-practices/)
 - [ DEV ](https://dev.to/ruppysuppy/7-tips-for-clean-react-typescript-code-you-must-know-2da2)
+
+### Personal Road Blocks
+
+ssh key identity missing
+- on push branch to remote repo
+- error: 
+    ```
+    git push origin style/Counter-Component/MUI-styling
+    git@github.com: Permission denied (publickey).
+    fatal: Could not read from remote repository.
+- solution: Generate a new SSH key and adding it to the ssh-agent  
+  - using [GitHub Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
 ### Show your support
 
 Give a ⭐️ if this project helped you!
