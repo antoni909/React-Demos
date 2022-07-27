@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 // TODO: find better type solution for data's type useState()
 // TODO: index the cache object with helper function hasKey()
 // TODO: find better type solution for selectionHandler event type
+// TODO: add fetch time in ms and place value in new section: Fetch Time
 
 type CacheObject = { [query:string]: string }
 const cache: CacheObject = { }
@@ -42,38 +43,59 @@ const Cache = () => {
 
     return (
         <div className="cache-wrapper">
-            <h3>Cache Component</h3>
-            <p>This component fetches Star Wars API data using React's useEffect hook</p>
-            <p>Pick a resource from the list of available Star Wars API resources:</p>
-            <form onChange={ selectionHandler } >
-                <label htmlFor="cache-resources"> query </label>
-                <select 
-                    id="cache-resources"
-                    name="select resource" 
-                >
-                    <option value="people">People</option>
-                    <option value="starships">Starships</option>
-                    <option value="vehicles">Vehicles</option>
-                    <option value="species">Species</option>
-                    <option value="planets">Planets</option>
-                </select>
-            </form>
-            <h3> Status: { status } </h3>
-            <h3> Cache: { Object.keys(cache).map( el =>( 
-                    <div key={ el }><h5>{ el }</h5></div>
-                ))}
-            </h3>
-            <h3>Results</h3>
-            {
-                data.length && data.map( person =>(
-                    <div
-                        className='cache-persons' 
-                        key={person.name}
-                    >
-                        <p>{ person.name }</p>
+            <div className='cache-heading'>
+                <h2>Basic Cache</h2>
+                <p>Fetches Star Wars data via API using useEffect hook</p>
+                <p>Pick a resource from the list of available Star Wars API resources:</p>
+            </div>
+
+            <div className='cache-container'>
+                <div className='cache-item'>
+                    <form onChange={ selectionHandler } >
+                        <label htmlFor="cache-resources"> query </label>
+                        <select 
+                            id="cache-resources"
+                            name="select resource" 
+                        >
+                            <option value="people">People</option>
+                            <option value="starships">Starships</option>
+                            <option value="vehicles">Vehicles</option>
+                            <option value="species">Species</option>
+                            <option value="planets">Planets</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div className='cache-item'>
+                    <h3>Status:</h3>
+                    <p>{ status }</p>
+                </div>
+
+                <div className='cache-item'>
+                    <h3> Cache: { cache && Object.keys(cache).map( el =>( 
+                            <div key={ el }><h5>{ el }</h5></div>
+                        ))}
+                    </h3>
+                </div>
+
+                <div className='cache-item'>
+                <h3>Results</h3>
+                    <div className='cache-results-container'>            
+                            <div className='cache-results'>
+                                    {
+                                        data.length && data.map( person =>(
+                                            <div 
+                                                key={person.name}
+                                            >
+                                                <p>{ person.name }</p>
+                                            </div>
+                                        ))
+                                    }
+                            </div>
                     </div>
-                ))
-            }
+                </div>
+
+            </div>
         </div>
     )
 }
