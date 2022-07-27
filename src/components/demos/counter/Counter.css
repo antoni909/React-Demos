@@ -1,0 +1,22 @@
+
+.counter-wrapper{
+    border: 2px black solid;
+    border-radius: 5%;
+    max-width: fit-content;
+    color: blue;
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.counter-start-item{
+    margin: auto;
+}
+
+.counter-card-item{
+    margin: auto;
+}

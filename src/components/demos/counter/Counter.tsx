@@ -1,5 +1,8 @@
 import { FC,ChangeEvent, useState } from 'react'
+import "./Counter.css"
 import CounterChild from "./CounterChild"
+
+import { TextField } from '@mui/material';
 
 const Counter: FC = () => {
 
@@ -14,24 +17,30 @@ const Counter: FC = () => {
     }
 
     return (
-        <div>
-            <h1>Counter Component</h1>
-            start count number:
-            <form>
-                <label htmlFor="btn-start-count"></label>
-                <input
-                    id="btn-start-count"
-                    type="text"
-                    onChange={ handler } 
-                />
-            </form>
+        <div className='counter-wrapper'>
+            <div className='counter-container'>
 
-            { isNotNumber && <p> Must Enter A Number Value </p> }
-            <CounterChild 
-                initialCount={ initialCount } 
-                key={ initialCount }
-            />
-        </div> 
+                <div>
+                    <h2>Basic Counter</h2>
+                    <div className='counter-start-item'>
+                        start value:
+                        <TextField 
+                            id="standard-basic" 
+                            label="enter" 
+                            variant="standard"
+                            onChange={ handler }  
+                            />
+                        { isNotNumber && <p> enter a number value only </p> }
+                    </div>
+                    <div className='counter-card-item'>
+                        <CounterChild 
+                            initialCount={ initialCount } 
+                            key={ initialCount }
+                        />
+                    </div>
+                </div> 
+            </div>
+        </div>
     )
 }
 
