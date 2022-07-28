@@ -1,10 +1,20 @@
 
 .App {
+  background-color: white;
+}
+
+.app-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.app-item{
+  /* text-align: center; */
 }
 
 .App-logo {
