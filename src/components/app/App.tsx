@@ -6,9 +6,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      
       <Header />
-      <Cache />
-      <Counter />
+      <div className='app-container'>
+          <Cache />
+          <Counter />
+      </div>
+
     </div>
   );
 }

@@ -49,24 +49,25 @@ Each Component is implemented using the following guidelines:
 ### Active Demos
 
 Simple Demos
-- [x] Counter
-- [ ] Stop Watch
-- [ ] Calculator
 - [ ] Analog Clock
+- [ ] Calculator
+- [x] Counter
 - [ ] Digital Clock
 - [ ] Image Scraper
 - [ ] Login Form
 - [ ] Query a Table
 - [ ] Searchable Photo Gallery
+- [ ] Streak Counter
+- [ ] Stop Watch
 
 Optimization Techniques
 - [x] Cache Component
   - [x] with useState Hook
   - [ ] with useRef Hook
-- [ ] Memoization
-- [ ] Debounce 
-- [ ] Throttle
 - [ ] Composition
+- [ ] Debounce 
+- [ ] Memoization
+- [ ] Throttle
 
 ## Roadmap (tentative)
 
