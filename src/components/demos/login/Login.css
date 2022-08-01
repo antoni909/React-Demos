@@ -1,6 +1,7 @@
 .login-wrapper{
     border: #000000 solid 2px;
     border-radius: 5%;
+    color: blue;
 }
 
 .login-container{
@@ -22,8 +23,8 @@
     align-items: center;
     justify-content: center;
 }
+
 .login-item-btn{
-    /* border: #000000 solid 2px; */
     background-color: rgb(154, 154, 253);
     color: whitesmoke;
     border-radius: 5%;
@@ -33,6 +34,16 @@
     align-items: center;
     justify-content: center;
 }
+
+.btn{
+  background-color: #2ea44f;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
 .login-item-chkbox{
     height: 50px;
     width: 250px;
@@ -40,6 +51,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .login-item-signup{
     height: 50px;
     width: 200px;
