@@ -133,14 +133,15 @@ Best Practices: React with TypeSript
 ### Personal Road Blocks
 
 ssh key identity missing
-- on push branch to remote repo
-- error: 
+- problem: on local branch push to remote repo
+- outputs error: 
     ```
     git push origin style/Counter-Component/MUI-styling
     git@github.com: Permission denied (publickey).
     fatal: Could not read from remote repository.
-- solution: Generate a new SSH key and adding it to the ssh-agent  
-  - using [GitHub Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+- solution: Generate a new SSH key and add it to the ssh-agent on local machine 
+  - using [GitHub Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 ### Show your support
 
 Give a ⭐️ if this project helped you!
