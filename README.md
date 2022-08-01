@@ -55,6 +55,10 @@ Simple Demos
 - [ ] Digital Clock
 - [ ] Image Scraper
 - [ ] Login Form
+  Sub Components:
+  - [ ] Signup Form
+  - [ ] Reset Password Form
+- [ ] Auth0 Login Form
 - [ ] Query a Table
 - [ ] Searchable Photo Gallery
 - [ ] Streak Counter
@@ -69,10 +73,37 @@ Optimization Techniques
 - [ ] Memoization
 - [ ] Throttle
 
+### Demo Functionality and Features
+
+- [ ] **Counter Component**
+
+- [ ] **Login Component**
+    - [ ] User can input the values on the displayed form
+    - [ ] User validation of the username and password
+    - [ ] Display Login form with username, password, login button, rememebr me, sign-up on the screen
+    - [ ] Display error message on login fail
+    - [ ] Display success message when login succeeds
+**Login Sub Components** :
+  - [ ] **Profile Component**
+    - [ ] Display personalized content ( users personal data ) when login successfull
+    - [ ] Display welcome message, username, last session
+    - [ ] Display Logout Button
+    - [ ] User is able to sign out
+    - [ ] StretchGoal: User is able to update Profile Pic
+    - [ ] StretchGoal: User is able to update Username
+  - [ ] **Signup Component**
+    - [ ] Display Modal that displays Signup form with new username, new password, signup button
+    - [ ] Display success message when signup succeeds
+    - [ ] Redirect user to Login Form
+  - [ ] **Reset Password Form Component**
+    - [ ] User is able to reset password 
+    - [ ] Display Modal that displays Reset Password form when click hyperlink
+    - [ ] Redirect user to Login Form
+
 ## Roadmap (tentative)
 
 - [x] Create Basic React and TypeScript project using create-react-app tool
-  - [x] prune the template project created from create-react-app + keep cool looking react logo
+  - [x] prune the template project created from create-react-app + keep cool-looking react logo
 - [x] Deploy main branch to Netlify
 - [ ] Add CI/CD via GitHub
   - [ ] create .gh dir
