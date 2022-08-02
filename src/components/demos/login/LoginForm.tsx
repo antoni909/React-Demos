@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC } from 'react'
 import { mockCredentials } from './mockCredentials';
 import Checkbox from '@mui/material/Checkbox';
 import { TextField } from '@mui/material';
@@ -11,7 +11,8 @@ interface Props{
 }
 
 export const LoginForm : FC<Props> = ({ setUser, setIsLoggedIn, setIsValid }) => {
-
+    
+    /* TODO: Add type for events */
     const handleSubmit = (e:any):void => {
         e.preventDefault()
         const username:string = e.target.username.value
@@ -21,8 +22,6 @@ export const LoginForm : FC<Props> = ({ setUser, setIsLoggedIn, setIsValid }) =>
             return console.log('credentials not found')
         }
 
-        /* DONE: Render Success Message Component */
-        /* DONE: On Succes Render Profile Component */
         setIsLoggedIn( true )
         setIsValid( true )
         setUser( username )
@@ -32,7 +31,6 @@ export const LoginForm : FC<Props> = ({ setUser, setIsLoggedIn, setIsValid }) =>
 
     return (
         <div className='form-wrapper'>
-                Login Form
                 <form onSubmit={ handleSubmit }>
                     <div className="login-item">
                         <TextField

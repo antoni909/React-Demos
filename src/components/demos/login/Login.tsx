@@ -9,11 +9,10 @@ const Login: FC = () => {
     const [ isValid, setIsValid ] = useState<boolean>(false)
     const [ isLoggedIn, setIsLoggedIn ] = useState<boolean>(false)
 
-    console.log(isValid,isLoggedIn)
     return(
         <div className="login-wrapper">
             <h2>Simple Login</h2>
-            <p>Login by entering the required information</p>
+            <p>Login with your credentials</p>
 
             <div className="login-container">
                 {
