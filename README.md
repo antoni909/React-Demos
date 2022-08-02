@@ -55,6 +55,10 @@ Simple Demos
 - [ ] Digital Clock
 - [ ] Image Scraper
 - [ ] Login Form
+  Sub Components:
+  - [ ] Signup Form
+  - [ ] Reset Password Form
+- [ ] Auth0 Login Form
 - [ ] Query a Table
 - [ ] Searchable Photo Gallery
 - [ ] Streak Counter
@@ -69,10 +73,37 @@ Optimization Techniques
 - [ ] Memoization
 - [ ] Throttle
 
+### Demo Functionality and Features
+
+- [ ] **Counter Component**
+
+- [ ] **Login Component**
+    - [x] Display Login form with username, password, login button, rememebr me, sign-up on the screen
+    - [x] User can input the values on the displayed form
+    - [x] Validation of the username and password
+    - [x] Display error message on login fail
+    - [x] Display success message when login succeeds
+**Login Sub Components** :
+  - [ ] **Profile Component**
+    - [x] Display personalized content ( users personal data ) when login successfull
+    - [x] Display welcome message, username, last session
+    - [x] Display Logout Button 
+    - [x] User is able to sign out
+    - [ ] StretchGoal: User is able to update Profile Pic
+    - [ ] StretchGoal: User is able to update Username
+  - [ ] **Signup Component**
+    - [ ] Display Modal that displays Signup form with new username, new password, signup button
+    - [ ] Display success message when signup succeeds
+    - [ ] Redirect user to Login Form
+  - [ ] **Reset Password Form Component**
+    - [ ] User is able to reset password 
+    - [ ] Display Modal that displays Reset Password form when click hyperlink
+    - [ ] Redirect user to Login Form
+
 ## Roadmap (tentative)
 
 - [x] Create Basic React and TypeScript project using create-react-app tool
-  - [x] prune the template project created from create-react-app + keep cool looking react logo
+  - [x] prune the template project created from create-react-app + keep cool-looking react logo
 - [x] Deploy main branch to Netlify
 - [ ] Add CI/CD via GitHub
   - [ ] create .gh dir
@@ -102,14 +133,15 @@ Best Practices: React with TypeSript
 ### Personal Road Blocks
 
 ssh key identity missing
-- on push branch to remote repo
-- error: 
+- problem: on local branch push to remote repo
+- outputs error: 
     ```
     git push origin style/Counter-Component/MUI-styling
     git@github.com: Permission denied (publickey).
     fatal: Could not read from remote repository.
-- solution: Generate a new SSH key and adding it to the ssh-agent  
-  - using [GitHub Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+- solution: Generate a new SSH key and add it to the ssh-agent on local machine 
+  - using [GitHub Documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 ### Show your support
 
 Give a ⭐️ if this project helped you!

@@ -1,0 +1,14 @@
+.form-wrapper{
+    /* border: #d000ff solid 2px; */
+    border-radius: 5%;
+    color: blue;
+}
+
+.btn{
+    background-color: #2ea44f;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
