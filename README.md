@@ -78,17 +78,17 @@ Optimization Techniques
 - [ ] **Counter Component**
 
 - [ ] **Login Component**
-    - [ ] User can input the values on the displayed form
-    - [ ] User validation of the username and password
-    - [ ] Display Login form with username, password, login button, rememebr me, sign-up on the screen
-    - [ ] Display error message on login fail
-    - [ ] Display success message when login succeeds
+    - [x] Display Login form with username, password, login button, rememebr me, sign-up on the screen
+    - [x] User can input the values on the displayed form
+    - [x] Validation of the username and password
+    - [x] Display error message on login fail
+    - [x] Display success message when login succeeds
 **Login Sub Components** :
   - [ ] **Profile Component**
-    - [ ] Display personalized content ( users personal data ) when login successfull
-    - [ ] Display welcome message, username, last session
-    - [ ] Display Logout Button
-    - [ ] User is able to sign out
+    - [x] Display personalized content ( users personal data ) when login successfull
+    - [x] Display welcome message, username, last session
+    - [x] Display Logout Button 
+    - [x] User is able to sign out
     - [ ] StretchGoal: User is able to update Profile Pic
     - [ ] StretchGoal: User is able to update Username
   - [ ] **Signup Component**

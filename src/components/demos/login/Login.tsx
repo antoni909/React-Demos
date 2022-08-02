@@ -1,54 +1,35 @@
 import './Login.css'
-import { TextField } from '@mui/material';
-import Checkbox from '@mui/material/Checkbox';
+import { FC,useState } from 'react'
+import { LoginForm } from './LoginForm'
+import { LoginProfile } from './LoginProfile'
 
-const Login = () => {
+const Login: FC = () => {
 
-    const handler = (e:any) => {
-        e.preventDefault()
-        const username:string = e.target.username.value
-        const password:string = e.target.password.value
-        console.log(username, password)
-    }
+    const [ user, setUser ] = useState<string>('')
+    const [ isValid, setIsValid ] = useState<boolean>(false)
+    const [ isLoggedIn, setIsLoggedIn ] = useState<boolean>(false)
 
-    const handleRemember = () => {
-        console.log('checked')
-    }
-
+    console.log(isValid,isLoggedIn)
     return(
         <div className="login-wrapper">
-            <h2>Welcome</h2>
+            <h2>Simple Login</h2>
             <p>Login by entering the required information</p>
-            <div className="login-container">
-                <form onSubmit={ handler }>
-                    <div className="login-item">
-                        <TextField
-                            label="username"
-                            name="username"
-                            type="text"
-                            variant='standard'
-                            required
-                        />
-                    </div>
-                    <div className="login-item">
-                        <TextField
-                            label="password"
-                            name="password"
-                            type="text"
-                            variant='standard'
-                            required
-                        />
-                    </div>
-                    <div className="login-item-btn">
-                        <button type='submit' className='login-item-btn btn'>Login</button>
-                    </div>
-                </form>
-                <div className="login-item-chkbox">
-                    <Checkbox onClick={ handleRemember }/> Remember Me?
-                </div>
-                <div className="login-item-signup">Not a Member?<a href="#blank">Sign Up</a></div>
-            </div>
 
+            <div className="login-container">
+                {
+                    ( isValid && isLoggedIn )
+                        ? <LoginProfile 
+                            username={ user.length? user : '' }
+                            isLoggedIn={ isLoggedIn } 
+                            setIsLoggedIn={ setIsLoggedIn }
+                          />
+                        : <LoginForm 
+                            setUser={ setUser }
+                            setIsLoggedIn={ setIsLoggedIn }
+                            setIsValid={ setIsValid }
+                          />
+                }
+            </div>
         </div>
     )
 }

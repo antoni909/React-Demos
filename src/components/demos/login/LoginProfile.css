@@ -1,0 +1,21 @@
+.login-profile-wrapper{
+    border: #000000 solid 2px;
+    border-radius: 5%;
+    color: blue;
+}
+
+.login-profile-btn{
+    background-color: #ff2200;
+    color: whitesmoke;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.img-placeholder{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
