@@ -7,18 +7,22 @@ interface Props{
     setIsLoggedIn: ( bool:boolean ) => void
 }
 
-export const LoginProfile : FC<Props> = ({ username, isLoggedIn, setIsLoggedIn }) => {
+/* TODO: add last session feature */
 
+export const LoginProfile : FC<Props> = ({ username, isLoggedIn, setIsLoggedIn }) => {
+    console.log(isLoggedIn)
     return (
         <div className='login-profile-wrapper' >
-            <p> Welcome { `${ username }` }</p>
-            <p>Status: logged in ?{ isLoggedIn }</p>
-            <p> last session: Jan 1 2020</p>
-            <div className='img-placeholder'>profile pic</div>
-            <button
-                onClick={ () => setIsLoggedIn(false) }
-                className='login-profile-btn'
-             >Logout</button>
+            <div className="login-profile-container">
+                <p> Welcome { ` ${ username } ` }</p>
+                <p>Status: { ` ${ isLoggedIn } ` } </p>
+                <p> last session: { JSON.stringify( new Date() ) }</p>
+                <div className='img-placeholder'>profile pic</div>
+                <button
+                    onClick={ () => setIsLoggedIn(false) }
+                    className='login-profile-btn'
+                >Logout</button>
+            </div>
         </div>
 
     );

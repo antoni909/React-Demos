@@ -1,4 +1,4 @@
-# Demos Using TypeScript and react
+# Demos Using TypeScript and React
 
 React Demos implemented using TS and React Functional Components
 
@@ -39,9 +39,9 @@ Active Deployments
 Each Component is implemented using the following guidelines:
 
 - [ ] Provide Explicit Types for all Values
-- [ ] State as a function: next state is based off of the previous State
+- [ ] State as a function: next state is based on the previous State
 - [ ] Manage the multiple possible states of variables with an Object (constant)
-- [ ] Component Render logis is as function-free as possible (make references vs inline definitions)
+- [ ] Component Render logic is as function-free as possible (make references vs inline definitions)
 - [ ] Clean conditionals 
 - [ ] Use JSX shorthands (i.e. someProp vs someProp={true})
 - [ ] Opt for string props vs string props with curly brackets
@@ -54,11 +54,14 @@ Simple Demos
 - [x] Counter
 - [ ] Digital Clock
 - [ ] Image Scraper
-- [ ] Login Form
-  Sub Components:
+- [x] Login Form
+  - Sub Features:
   - [ ] Signup Form
   - [ ] Reset Password Form
 - [ ] Auth0 Login Form
+  - Sub Features:
+  - [ ] Signup Form
+  - [ ] Reset Password Form
 - [ ] Query a Table
 - [ ] Searchable Photo Gallery
 - [ ] Streak Counter
@@ -77,7 +80,7 @@ Optimization Techniques
 
 - [ ] **Counter Component**
 
-- [ ] **Login Component**
+- [x] **Login Component**
     - [x] Display Login form with username, password, login button, rememebr me, sign-up on the screen
     - [x] User can input the values on the displayed form
     - [x] Validation of the username and password

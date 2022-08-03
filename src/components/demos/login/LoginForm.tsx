@@ -31,33 +31,35 @@ export const LoginForm : FC<Props> = ({ setUser, setIsLoggedIn, setIsValid }) =>
 
     return (
         <div className='form-wrapper'>
-                <form onSubmit={ handleSubmit }>
-                    <div className="login-item">
-                        <TextField
-                            label="username"
-                            name="username"
-                            type="text"
-                            variant='standard'
-                            required
-                        />
-                    </div>
-                    <div className="login-item">
-                        <TextField
-                            label="password"
-                            name="password"
-                            type="text"
-                            variant='standard'
-                            required
-                        />
-                    </div>
-                    <div className="login-item-btn">
-                        <button type='submit' className='login-item-btn btn'>Login</button>
-                    </div>
-                </form>
-                <div className="login-item-chkbox">
-                    <Checkbox onClick={ handleRemember }/> Remember Me?
+            <p> <em> (try... 'mockUser' and 'mockPass' </em> 🤫) </p>
+            <p>Login with your credentials</p>
+            <form onSubmit={ handleSubmit }>
+                <div className="login-item">
+                    <TextField
+                        label="username"
+                        name="username"
+                        type="text"
+                        variant='standard'
+                        required
+                    />
                 </div>
-                <div className="login-item-signup">Not a Member?<a href="#blank">Sign Up</a></div>
+                <div className="login-item">
+                    <TextField
+                        label="password"
+                        name="password"
+                        type="text"
+                        variant='standard'
+                        required
+                    />
+                </div>
+                <div className="login-item-btn">
+                    <button type='submit' className='login-item-btn btn'>Login</button>
+                </div>
+            </form>
+            <div className="login-item-chkbox">
+                <Checkbox onClick={ handleRemember }/> Remember Me?
+            </div>
+            <div className="login-item-signup">Not a Member?<a href="#blank">Sign Up</a></div>
         </div>
     );
 }
