@@ -12,8 +12,6 @@ const Login: FC = () => {
     return(
         <div className="login-wrapper">
             <h2>Simple Login</h2>
-            <p>Login with your credentials</p>
-
             <div className="login-container">
                 {
                     ( isValid && isLoggedIn )
