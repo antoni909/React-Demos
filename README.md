@@ -49,11 +49,11 @@ Each Component is implemented using the following guidelines:
 
 ### React Code Challenges
 
-Using LinkedIn React.js
+Using TypeScript, solve LinkedIn [React.js Code Challenges](https://www.linkedin.com/learning/react-js-code-challenges/dark-mode?autoplay=true&resume=false)
 
-- [ ] Color Renderer - build a color renderer that will display color swatches on a user interface
-  - [ ] Given: ColorRenderer, Color Component
-  - [ ] Requirements: Update the ColorRender component to display one instance of the Color Component for each color in the array of colors
+- [x] Color Renderer - build a color renderer that will display color swatches on a user interface
+  - [x] Given: ColorRenderer, Color Component
+  - [x] Requirements: Update the ColorRender component to display one instance of the Color Component for each color in the array of colors
 
 ### Active Demos
 

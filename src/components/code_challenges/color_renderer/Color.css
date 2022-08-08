@@ -1,0 +1,16 @@
+
+.color-renderer-container{
+    display: flex;
+    gap: 15px;
+    direction: row;
+    border-radius: 5%;
+    padding: 6px;
+}
+
+.color-square{
+    border: black solid 3px;
+    border-radius: 4%;
+    padding: 6px;
+    width: 150px;
+    height: 150px;
+}

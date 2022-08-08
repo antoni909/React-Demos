@@ -1,8 +1,9 @@
-import Cache from '../demos/cache/Cache';
-import Counter from '../demos/counter/Counter';
-import Login from '../demos/login/Login'
-import Header from '../header/Header';
 import './App.css';
+// import Cache from '../demos/cache/Cache';
+// import Counter from '../demos/counter/Counter';
+import ColorRenderer from '../code_challenges/color_renderer/ColorRenderer';
+import Header from '../header/Header';
+// import Login from '../demos/login/Login'
 
 function App() {
   return (
@@ -10,9 +11,16 @@ function App() {
       
       <Header />
       <div className='app-container'>
-          <Cache />
-          <Counter />
-          <Login />
+        <div>
+          <h3>Demos</h3>
+            {/* <Cache /> */}
+            {/* <Counter /> */}
+            {/* <Login /> */}
+        </div>
+        <div>
+          <h3>Code Challenges</h3>
+          <ColorRenderer />
+        </div>
       </div>
 
     </div>
