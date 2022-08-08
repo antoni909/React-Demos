@@ -8,23 +8,17 @@ import Login from '../demos/login/Login'
 function App() {
   return (
     <div className="App">
-      
+
       <Header />
       <div className='app-container'>
-        <div>
-          <h3>Demos</h3>
-            <Cache />
-            <Counter />
-            <Login />
-        </div>
-        <div>
-          <h3>Code Challenges</h3>
+          <Cache />
+          <Counter />
+          <Login />
           <ColorRenderer />
-        </div>
       </div>
 
     </div>
-  );
+  )
 }
 
 export default App;
