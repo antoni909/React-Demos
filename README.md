@@ -10,21 +10,22 @@ React Demos implemented using TS and React Functional Components
   - [Why Though?](#why-though)
   - [Deployments](#deployments)
   - [TypeScript with React Best Practices](#typescript-with-react-best-practices)
+  - [React Code Challenges](#react-code-challenges)
   - [Active Demos](#active-demos)
   - [Roadmap (tentative)](#roadmap-tentative)
   - [Available Scripts](#available-scripts)
   - [Resources Used](#resources-used)
-  - [Road Blocks](#road-blocks)
+  - [Road Blocks](#personal-road-blocks)
   - [Show your support](#show-your-support)
   - [License](#license)
 
 ### Why Though?
 
-One repository that is a collection of demos, small contained projects that can live in its own component, where I can learn TypeScript and further explore my React Skills by implementing simple demos (clock,counter,etc) and optimzation techniques (memoization, composition, debounce, etc).
+One repository that is a collection of demos (small contained projects that can live in its own component), and react-based code challenges where I can learn TypeScript and further explore my React Skills by implementing simple demos (clock,counter,etc), optimzation techniques (memoization, composition, debounce, etc), and react code challenges.
 
 vs....
 
-creating multiple 'overkill' create-react-app projects for each 'demo' or optimizations
+creating multiple 'overkill' create-react-app projects for each demo or optimization, code challenges.
 
 ### Deployments
 
@@ -45,6 +46,14 @@ Each Component is implemented using the following guidelines:
 - [ ] Clean conditionals 
 - [ ] Use JSX shorthands (i.e. someProp vs someProp={true})
 - [ ] Opt for string props vs string props with curly brackets
+
+### React Code Challenges
+
+Using LinkedIn React.js
+
+- [ ] Color Renderer - build a color renderer that will display color swatches on a user interface
+  - [ ] Given: ColorRenderer, Color Component
+  - [ ] Requirements: Update the ColorRender component to display one instance of the Color Component for each color in the array of colors
 
 ### Active Demos
 
