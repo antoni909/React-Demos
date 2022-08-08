@@ -1,22 +1,24 @@
+import './App.css';
 import Cache from '../demos/cache/Cache';
 import Counter from '../demos/counter/Counter';
-import Login from '../demos/login/Login'
+import ColorRenderer from '../code_challenges/color_renderer/ColorRenderer';
 import Header from '../header/Header';
-import './App.css';
+import Login from '../demos/login/Login'
 
 function App() {
   return (
     <div className="App">
-      
+
       <Header />
       <div className='app-container'>
           <Cache />
           <Counter />
           <Login />
+          <ColorRenderer />
       </div>
 
     </div>
-  );
+  )
 }
 
 export default App;
