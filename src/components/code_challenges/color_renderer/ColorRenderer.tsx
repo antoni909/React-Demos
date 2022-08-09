@@ -29,7 +29,7 @@ export default function ColorRenderer () {
             return (
                 <div className='color-renderer-container'>
                     { colorsArr.map( ( color:Colors ) => (
-                        <Color hex={ color.hex } name={ color.name }/>
+                        <Color key={color.name} hex={ color.hex } name={ color.name }/>
                     ))}
                 </div>
             )
