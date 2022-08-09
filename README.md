@@ -43,7 +43,7 @@ Each Component is implemented using the following guidelines:
 - [ ] State as a function: next state is based on the previous State
 - [ ] Manage the multiple possible states of variables with an Object (constant)
 - [ ] Component Render logic is as function-free as possible (make references vs inline definitions)
-- [ ] Clean conditionals 
+- [ ] Clean conditionals
 - [ ] Use JSX shorthands (i.e. someProp vs someProp={true})
 - [ ] Opt for string props vs string props with curly brackets
 
@@ -52,14 +52,14 @@ Each Component is implemented using the following guidelines:
 Using TypeScript, solve LinkedIn [React.js Code Challenges](https://www.linkedin.com/learning/react-js-code-challenges/dark-mode?autoplay=true&resume=false)
 
 - [x] **Color Renderer - build a color renderer that will display color swatches on a user interface**
-  - [x] **Given**: ColorRenderer, Color Component
+  - [x] **Given**: make from scratch 
   - [x] **Requirements**: Update the ColorRender component to display one instance of the Color Component for each color in the array of colors
 
-- [ ] DarkMode - implement a component that allows you to change from light to dark
-  - [ ] **Given**: 
-  - [ ] **Requirements**:
-    - [ ] when darkmode button is clicked the page should be displayed in darkmode
-    - [ ] when lightmode button is clicked the page should be displayed in lightmode
+- [x] DarkMode - implement a component that allows you to change from light to dark
+  - [x] **Given**: make from scratch
+  - [x] **Requirements**:
+    - [x] when darkmode button is clicked the page should be displayed in darkmode
+    - [x] when lightmode button is clicked the page should be displayed in lightmode
 
 ### Active Demos
 

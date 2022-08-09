@@ -1,0 +1,38 @@
+.darkmode-color-container{
+    border: black solid 3px;
+    border-radius: 5%;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+.darkmode-header{
+    padding: 10px 20px;
+}
+.dark-mock-page{
+    background-color: black;
+    color:aliceblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    height: 300px;
+    width: 400px;
+}
+.light-mock-page{
+    background-color: whitesmoke;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    height: 300px;
+    width: 400px;
+}
+.btn-darkmode{
+    border-radius: 5%;
+    color: black;
+}
+.btn-lightmode{
+    border-radius: 5%;
+    color: black;
+}
